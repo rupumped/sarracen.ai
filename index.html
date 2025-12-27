@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>My Website - Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- SEO Description -->
+	<meta name="author" content="Nicholas S. Selby">
+	<meta name="description" content="Welcome to my website. A showcase of projects and ideas.">
+	<link rel="canonical" href="https://rupumped.github.io/sarracen.ai">
+
+	<!-- Open Graph Tags -->
+	<meta property="og:title" content="My Website - Home">
+	<meta property="og:description" content="Welcome to my website. A showcase of projects and ideas.">
+	<meta property="og:image" content="https://rupumped.github.io/og-image.jpg">
+	<meta property="og:image:width" content="1498">
+	<meta property="og:image:height" content="778">
+	<meta property="og:image:alt" content="Nicholas Selby: Engineering that Centers Users and Their Communities">
+	<meta property="og:url" content="https://rupumped.github.io/sarracen.ai">
+	<meta property="og:type" content="website">
+
+	<!-- Favicon -->
+	<link rel="icon" href="http://rupumped.github.io/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to My Website</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="#about">About</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="hero">
+			<h2>Building the Future, One Project at a Time</h2>
+			<p>This is a demonstration site showing how to protect your content from unauthorized AI scrapers while maintaining legitimate search engine visibility.</p>
+		</section>
+
+		<section id="about">
+			<h2>About This Site</h2>
+			<p>This website demonstrates an anti-scraper defense system designed for static sites. It uses client-side JavaScript to create honeypot traps that waste the resources of aggressive crawlers while keeping legitimate content accessible to search engines and real users.</p>
+			
+			<p>The site includes hidden links to tarpit pages that generate infinite content, trapping scrapers in an endless maze while your real content stays protected.</p>
+		</section>
+
+		<section id="projects">
+			<h2>Projects</h2>
+			<div class="project-grid">
+				<article class="project-card">
+					<h3>Project Alpha</h3>
+					<p>A demonstration of innovative web technologies and modern development practices.</p>
+				</article>
+				
+				<article class="project-card">
+					<h3>Project Beta</h3>
+					<p>Exploring the intersection of design and functionality in web applications.</p>
+				</article>
+				
+				<article class="project-card">
+					<h3>Project Gamma</h3>
+					<p>Pushing the boundaries of what's possible with static site architecture.</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="contact">
+			<h2>Get in Touch</h2>
+			<p>Interested in collaborating or learning more? Feel free to reach out.</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>© 2025 This work by <a href="https://rupumped.github.io" rel="author">Nicholas S. Selby</a> is licensed under a GNU GPLv3. Feel free to fork the <a rel="external" target="_blank" href="https://github.com/rupumped/sarracen.ai">source code</a> from GitHub and create your own website using this template.</p>
+		
+		<!-- Honeypot Links - Hidden from real users, visible to scrapers -->
+		<!-- Method 1: CSS positioning -->
+		<a href="tarpit/entry.html" class="tarpit-link">Site Archive</a>
+		
+		<!-- Method 2: Inline styles -->
+		<div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+			<a href="tarpit/trap-1.html">Legacy Documentation</a>
+			<a href="tarpit/trap-2.html">Historical Posts</a>
+			<a href="tarpit/trap-3.html">Old Resources</a>
+		</div>
+		
+		<!-- Method 3: Display none (some scrapers ignore these, but worth including) -->
+		<div style="display:none;">
+			<a href="tarpit/trap-4.html">Archived Content</a>
+		</div>
+		
+		<!-- Method 4: Transparent link -->
+		<a href="tarpit/entry.html" style="opacity:0;position:absolute;top:0;left:0;width:1px;height:1px;">Archive</a>
+	</footer>
+</body>
+</html>
