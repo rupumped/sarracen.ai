@@ -84,20 +84,6 @@ The `robots.txt` file:
 
 Legitimate bots respect robots.txt. Aggressive AI scrapers often don't. This creates a selection filter.
 
-## 📊 Monitoring
-
-Since this is client-side, you won't have server logs. To monitor effectiveness:
-
-1. **Use analytics** (Google Analytics, Plausible, etc.) with events:
-   ```javascript
-   // Add to tarpit.js
-   gtag('event', 'tarpit_hit', { 'page_path': window.location.pathname });
-   ```
-
-2. **Check referrers** in your analytics to see what's accessing tarpit pages
-
-3. **Monitor bandwidth** through your hosting provider's dashboard
-
 ## 🛡️ Best Practices
 
 **DO:**
